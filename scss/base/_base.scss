@@ -1,0 +1,72 @@
+@import './var';
+@import './reset';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Alegreya';
+	font-weight: 400;
+	color: $accentColor;
+	font-size: 24px;
+	background: #FFFAFB;
+	position: relative;
+
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0 15px;
+}
+
+// General
+.title {
+	font-family: 'Josefin Sans';
+	font-weight: 600;
+	font-size: clamp(1.125rem, 0.937rem + 0.94vw, 1.625rem);
+	line-height: 1.6;
+	color: #FF2625;
+}
+
+.subtitle {
+	font-weight: 400;
+	font-size: clamp(1rem, 0.859rem + 0.71vw, 1.375rem);
+	line-height: 1.6;
+	color: $gray;
+}
+
+.text {
+	font-family: 'Josefin Sans';
+	font-weight: 700;
+	font-size: clamp(1.5rem, 1.029rem + 2.35vw, 2.75rem);
+	line-height: 130%;
+}
+.btn-red {
+	font-weight: 700;
+	font-size: 22px;
+	padding: 12px 58px;
+	border-radius: 30px;
+	background-color: $red;
+	color: white;
+	border: 1px solid $red;
+	transition: all 0.2s;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #FFFAFB;
+			border: 1px solid $red;
+			color: $gray;
+		}
+	}
+}
+
+.more {
+	display: block;
+}

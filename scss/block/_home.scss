@@ -1,0 +1,150 @@
+.home {
+	margin-top: clamp(1.875rem, -2.478rem + 21.76vw, 13.438rem);
+	margin-bottom: 171px;
+	
+
+	// .home__container
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .home__left
+	&__left {
+		display: flex;
+		flex-direction: column;
+		@media (max-width: 992px) {
+			text-align: center;
+			align-items: center;
+		}
+	}
+
+	// .home__head
+	&__head {
+		display: flex;
+		align-items: center;
+	}
+
+	// .home__title
+	&__title {
+		margin-bottom: clamp(1.25rem, 0.779rem + 2.35vw, 2.5rem);
+		position: relative;
+		margin-left: 30px;
+
+		&::after {
+			content: '';
+			display: block;
+			height: 3px;
+			width: 26px;
+			top: 56%;
+			left: -23%;
+			position: absolute;
+			background-color: $red;
+
+			@media (max-width: 1200px) {
+				& {
+					display: none;
+				}
+			}
+		}
+	}
+
+	// .home__img
+	&__img {
+		width: 26px;
+		height: 26px;
+		margin-bottom: 35px;
+		margin-left: 15px;
+
+		svg {
+			width: 26px;
+			height: 26px;
+		}
+	}
+
+	// .home__base
+	&__base {
+		margin-bottom: clamp(1.25rem, 0.309rem + 4.71vw, 3.75rem);
+	}
+
+	// .home__text
+	&__text {
+		max-width: 472px;
+		font-family: 'Josefin Sans';
+		font-weight: 700;
+		font-size: clamp(1.25rem, -0.162rem + 7.06vw, 5rem);
+		line-height: 110%;
+	}
+
+	// .home__subtitle
+	&__subtitle {
+		margin-top: 20px;
+	}
+
+	// .home__buttons
+	&__buttons {
+		display: flex;
+		align-items: center;
+		@media (max-width: 592px) {
+			text-align: center;
+		}
+	}
+
+	// .home__right
+	&__right {
+		z-index: -1;
+	}
+
+	// .home__wallpaper
+	&__wallpaper {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100vh;
+	}
+
+	// .home-first__decoration
+	.home-first__decoration {
+		position: absolute;
+		top: 20%;
+		left: 0;
+		max-width: 100px;
+		max-height: 283px;
+	}
+
+	.home-text__decoration {
+		font-family: 'Josefin Sans';
+		font-weight: 600;
+		font-size: clamp(1.875rem, -2.125rem + 20vw, 12.5rem);
+		line-height: 160%;
+		color: $redOpac;
+		margin-left: clamp(2.5rem, -1.147rem + 18.24vw, 12.188rem);
+	}
+}
+
+.home {
+
+	// .home__btn-first
+	&__btn-first {
+		margin-right: clamp(0.625rem, 0.154rem + 2.35vw, 1.875rem);
+	}
+
+	// .home__btn-second
+	&__btn-second {
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 160%;
+		padding: 11px 48px;
+		border-radius: 30px;
+		color: $accentColor;
+		border: 1px solid $red;
+		transition: all 0.2s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $red;
+				color: white;
+			}
+		}
+	}
+}

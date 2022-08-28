@@ -1,0 +1,36 @@
+@import './var';
+@import './reset';
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 450px) {
+	.home__buttons {
+		flex-direction: column;
+	}
+
+	.home__btn-first {
+		margin-bottom: 10px;
+	}
+
+}
+
+@media (max-width: 520px) {
+	.home__subtitle {
+		font-size: 15px;
+	}
+
+}
+
+@media (max-width: 592px) {
+	.home__wallpaper {
+		display: none;
+	}
+}

@@ -1,0 +1,117 @@
+.our {
+	position: relative;
+	margin-bottom: 170px;
+	// .our__container
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+	// .our__head
+	&__head {
+		display: flex;
+		flex-direction: column;
+	}
+	// .our__title
+	&__title {
+		text-align: center;
+		margin-bottom: clamp(0.938rem, 0.585rem + 1.76vw, 1.875rem);
+	}
+	// .our__text
+	&__text {
+		text-align: center;
+	}
+	.our-slide {
+		cursor: pointer;
+		padding-top: clamp(1.25rem, 0.191rem + 5.29vw, 4.063rem);
+		padding-bottom: clamp(1.25rem, 0.568rem + 3.41vw, 3.063rem);
+		margin-top: clamp(1.25rem, 0.379rem + 4.35vw, 3.563rem);
+		max-width: 270px;
+		max-height: 282px;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 0.5px solid #E1E1E1;
+		transition: all 0.2s;
+		border-radius: 5px 5px 5px 35px;
+	}
+	.our-slide__img {
+		max-width: 63px;
+		max-height: 63px;
+		
+		margin-bottom: clamp(0.938rem, 0.185rem + 3.76vw, 2.938rem);
+	}
+	.our-slide__text {
+		text-align: center;
+	}
+
+	.our__slider-extra {
+		margin-top: 40px;
+		margin-bottom: 0;
+		display: none;
+		margin-bottom: 33px;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 120%;
+		text-align: center;
+		color: $red;
+		transition: all 0.2s;
+
+		&.more {
+			display: block;
+		}
+	}
+}
+.slider-our {
+	// .slider-our__buttons
+	&__buttons {
+		position: absolute;
+		right: 12.5%;
+		top: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (max-width: 1200px) {
+			justify-content: center;
+			align-items: center;
+			right: 0;
+			top: 100%;
+			left: 0;
+		}
+		@media (max-width: 692px) {
+			justify-content: center;
+			align-items: center;
+			right: 0;
+			top: 100%;
+			left: 0;
+		}
+		@media (max-width: 460px) {
+			justify-content: center;
+			align-items: center;
+			right: 0;
+			top: 100%;
+			left: 0;
+		}
+	}
+}
+.slider-our-next {
+	cursor: pointer;
+}
+.slider-our-prev {
+	cursor: pointer;
+	margin-bottom: 41px;
+}
+.swiper {
+	overflow: hidden;
+}
+.swiper-button-next {
+	cursor: pointer;
+}
+.swiper-button-prev {
+	cursor: pointer;
+	transform: rotate(180deg);
+}
+.swiper-wrapper {
+	display: inline-flex;
+}
